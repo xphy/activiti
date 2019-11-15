@@ -1,0 +1,45 @@
+#指定端口号
+server:
+  port: 8090
+#数据库连接
+#达梦数据库
+#spring:
+#  datasource:
+#    driver-class-name: dm.jdbc.driver.DmDriver
+#    url: jdbc:dm://127.0.0.1:5236/MAIN?useUnicode=true&amp;characterEncoding=UTF-8
+#    username: ACTIVITI
+#    password: 1234567890
+
+#MySQL数据库
+#  spring:
+#    datasource:
+#      driver-class-name: com.mysql.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/activiti?useUnicode=true&characterEncoding=utf-8
+#      username: root
+#      password: root
+#    activiti:
+#      check-process-definitions: false
+
+spring:
+  datasource:
+    master:
+      url: jdbc:mysql://localhost:3306/activiti_test?useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    activiti1:
+      url: jdbc:mysql://localhost:3306/activiti_business?useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+  activiti:
+    check-process-definitions: false
+#mapper扫描路径
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
+
+
+
