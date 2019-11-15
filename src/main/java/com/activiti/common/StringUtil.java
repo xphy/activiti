@@ -31,6 +31,7 @@ public class StringUtil {
         int len = strTable.length();
         boolean bDone = true;
         do {
+            System.out.println("aa");
             retStr = "";
             int count = 0;
             for (int i = 0; i < length; i++) {
