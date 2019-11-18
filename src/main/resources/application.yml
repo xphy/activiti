@@ -20,7 +20,6 @@ spring:
   activiti:
     check-process-definitions: false #设置避免扫描resource下的process文件夹
 
-
 #mapper扫描路径
 mybatis:
   mapper-locations: classpath:mapper/*.xml
