@@ -280,7 +280,10 @@ public class StringUtil {
     }
 
     /**
-     * 将list集合转化为like查询语句    * @param names    * @return
+     * 将list集合转化为like查询语句
+     *
+     * @param names
+     * @return
      */
     public static String listToLikeString(List<String> names) {
         StringBuffer sb = new StringBuffer();

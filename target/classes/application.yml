@@ -11,29 +11,16 @@ server:
 #    password: 1234567890
 
 #MySQL数据库
-#  spring:
-#    datasource:
-#      driver-class-name: com.mysql.jdbc.Driver
-#      url: jdbc:mysql://localhost:3306/activiti?useUnicode=true&characterEncoding=utf-8
-#      username: root
-#      password: root
-#    activiti:
-#      check-process-definitions: false
-
 spring:
   datasource:
-    master:
-      url: jdbc:mysql://localhost:3306/activiti_test?useUnicode=true&characterEncoding=utf-8
-      username: root
-      password: root
-      driver-class-name: com.mysql.jdbc.Driver
-    activiti1:
-      url: jdbc:mysql://localhost:3306/activiti_business?useUnicode=true&characterEncoding=utf-8
-      username: root
-      password: root
-      driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/activiti?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
   activiti:
-    check-process-definitions: false
+    check-process-definitions: false #设置避免扫描resource下的process文件夹
+
+
 #mapper扫描路径
 mybatis:
   mapper-locations: classpath:mapper/*.xml
